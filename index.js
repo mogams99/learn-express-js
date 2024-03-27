@@ -8,7 +8,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send({
-        message: 'This is home page',
+        message: 'This is home page with json',
     });
 });
 
