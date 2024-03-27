@@ -46,6 +46,14 @@ app.get('/blog/:category/:title/:author', (req, res) => {
     });
 });
 
+app.get('/search', (req, res) => {
+    const { q } = req.query;
+    if (!q) res.send({message: `Keyword not found`,})
+    res.send({
+        message: `Search keyword: ${q}`,
+    });
+});
+
 app.get('*', (req, res) => {
     res.send({
         message: 'Page not found',
