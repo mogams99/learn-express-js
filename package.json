@@ -1,0 +1,23 @@
+{
+  "name": "learn-express",
+  "version": "1.0.0",
+  "description": "implementasi framework express js dengan node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mogams99/learn-express-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mogams99/learn-express-js/issues"
+  },
+  "homepage": "https://github.com/mogams99/learn-express-js#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
