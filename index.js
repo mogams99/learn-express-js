@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.use(() => {
+app.use((req, res) => {
     console.log(`We got request`);
+    res.send({ message: `Hello Express`})
 });
 
 app.listen(8080, () => {
