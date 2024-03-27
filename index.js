@@ -24,6 +24,28 @@ app.post('/cats', (req, res) => {
     });
 });
 
+app.get('/about', (req, res) => {
+    res.send({
+        message: 'This is about page',
+    });
+});
+
+app.get('/blog/:title', (req, res) => {
+    console.log(req.params);
+    const { title } = req.params;
+    res.send({
+        message: `This is blog ${title} page`,
+    });
+});
+
+app.get('/blog/:category/:title/:author', (req, res) => {
+    console.log(req.params);
+    const { category, title, author } = req.params;
+    res.send({
+        message: `This is blog, category: ${category} | title: ${title} page | author: ${author}`,
+    });
+});
+
 app.get('*', (req, res) => {
     res.send({
         message: 'Page not found',
